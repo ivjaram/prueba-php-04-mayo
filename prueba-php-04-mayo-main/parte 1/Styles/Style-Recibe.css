@@ -1,0 +1,49 @@
+.volver #volver{
+    width: 18%;
+    background: red;
+    border: 3px solid black;
+    color: white;
+    font-size: 35px;
+}
+body{
+    background: url(../img/photo.jpg);
+}
+.principal{
+    display: flex;
+    padding: 80px;
+    margin: 120px;
+    
+}
+.contenedores{
+    padding: 40px ;
+    margin: 50px;
+
+}
+img{width:250px;}
+
+input[type="submit"]{
+font-size: 25px;
+width: 82%;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+
+h1{
+text-align: center;
+color: #1a2537;
+font-size: 40px;
+}
+
+.titulo h1{
+font-size: 60px;
+}
+.principal #btn-Cliente:hover{
+background: cadetblue;
+}
+.principal #btn-Producto:hover{
+background: cadetblue;
+}
+.principal #btn-Ventas:hover{
+background: cadetblue;
+}
