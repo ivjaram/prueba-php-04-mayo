@@ -10,34 +10,33 @@
 <body>
     <div class="principal">
         <div class="contenedor">
-            <form action="recibe-metodos/R-Cliente.php" method="POST">
+            <form name="formulario" action="recibe-metodos/R-Cliente.php" method="POST">
                 <h3>Formulario Cliente</h3>
 
                 <label>Rut</label>
-                <input type="Number" placeholder="ej:12.345.678-9" name="rut-txt" id="rut_txt">
+                <input type="text" placeholder="ej:12345678-9" name="rut" id="rut" required oninput="checkRut(this)">
 
                 <label>Nombre</label>
-                <input type="" placeholder="ej:juanita" name="nombre-txt">
+                <input type="text" onkeypress="return soloLetras(event)" id="name" >
 
                 <label>Apellido</label>
-                <input type="text" placeholder="ej:perex" name="apellido-txt">
+                <input type="text" onkeypress="return soloLetras(event)" id="apellido">
 
                 <label>Edad</label>
                 <input type="Number" placeholder="ej:21" name="edad-txt"> 
-                
-                <label>Ciudad</label>
-                <Select name="operador2">
-                <option >--Seleccionar--</option>
-                <option >victoria</option>
-                <option >Temuco</option>
-                <label>Comuna</label>
-                <Select name="operador">
-                <option >--Seleccionar--</option>
-                <option >Malleco</option>
-                <option >Cautin</option><br />
+
+                <select class="seleccion" name="comuna" onchange="cambia()">
+                    <option value="0">Seleccione
+                    <option value="1">Malleco
+                    <option value="2">Cautin
+                    </select>
+
+                    <select class="seleccion" name="opt">
+
+                    <option value="-">No hay datos</select>
 
 
-                <input type="submit" name="enviar-FCliente" value="Enviar" id="btnvalida">
+                <input type="submit" name="enviar-FCliente" value="Enviar" id="btnvalida" onClick="CamposVaciosCliente()">
             </form>
         </div>
         <div class="volver">
@@ -46,6 +45,7 @@
             </form>
         </div>
     </div>
+    
 
 </body>
 

@@ -1,6 +1,9 @@
 <h1>Ventas</h1>
+
 <script>alert("Se ah Enviado Correctamente la Informacion");</script>
 <?php
+   $fecha_ingreso = date('d-m-Y')."<br />";
+   echo "<h3>La Fecha es: ".$fecha_ingreso."</h3><br /> ";
 
 if (isset($_POST['enviar-FVentas'])) {
 

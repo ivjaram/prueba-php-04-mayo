@@ -16,18 +16,18 @@
             <input type="Number" placeholder="ej:  23" name="cantidad_txt" id="num1" onkeyup="precioXcantidad()">
 
             <label>Nombre Producto</label>
-            <input type="text" placeholder="ej:  carioca" name="Nombre_producto">
+            <input type="text" placeholder="ej:  carioca" name="Nombre_producto" id="num3">
 
             <label>Precio</label>
-            <input type="text" placeholder="ej:  21.000" name="Precio_txt" id="num2" onkeyup="precioXcantidad()">
+            <input type="Number" placeholder="ej:  21.000" name="Precio_txt" id="num2" onkeyup="precioXcantidad()">
 
             <label>Precio x cantidad</label>
-            <input type="Number" placeholder="ej:  32.000" name="Precio_cantidad_txt" id="res">
+            <input type="text" placeholder="ej:  32.000" name="Precio_cantidad_txt" id="res">
 
             <label>Total</label>
-            <input type="Number" placeholder="ej:  5.000.000" name="Total_txt" id="total">
+            <input type="text" placeholder="ej:  5.000.000" name="Total_txt" id="total">
 
-            <input type="submit" name="enviar-FVentas" value="Enviar">
+            <input type="submit" name="enviar-FVentas" value="Enviar" onClick="CamposVaciosVentas()">
         </form >
     </div>
     <div class="volver">
