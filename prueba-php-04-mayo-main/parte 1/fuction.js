@@ -63,7 +63,7 @@ function precioXcantidad() {
 }
 //Funcion del formulario Cliente de campos vacios
 function CamposVaciosCliente() {
-    var name = document.getElementById('name').value;
+    var name = document.getElementById('nombre').value;
     var apellido = document.getElementById('apellido').value;
 
     if (name.length == 0 || /^\s+$/.test(name)) {

@@ -5,43 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="fuction.js"></script>
+    <link rel="stylesheet" href="Styles/Style-FProducto.css">
     <title>Formulario Producto</title>
 </head>
 <body>
-    <h1></h1>
-    <div class="contenedor">
-        <form name="product"action="recibe-metodos/R-Producto.php" method="GET">
-            <h3>Formulario Producto</h3>
+    <div class="principal">
+        <div class="contenedor">
+            <form name="product"action="recibe-metodos/R-Producto.php" method="GET">
+                <h3>Formulario Producto</h3>
 
-            <label>Codigo Producto</label>
-            <input type="text" placeholder="ej:  231241" name="Codigo-producto" id="n1">
+                <label>Codigo Producto</label>
+                <input type="text" placeholder="ej:  231241" name="Codigo-producto" id="n1"><br />
 
-            <label>Nombre Producto</label>
-            <select class="seleccion" name="opt">
-            <option value="-">No hay datos</select>
+                <label>Nombre Producto</label>
+                <select class="seleccion" name="opt">
+                <option value="-">No hay datos</select><br />
 
-            <label>Categoria</label>
-            <select class="seleccion" name="Categoria" onchange="Producto()">
-                    <option value="0">Seleccione
-                    <option value="1">Confites
-                    <option value="2">Abarrotes
-                    <option value="3">Lacteos
-                    <option value="4">Bebidas
-                    </select>
+                <label>Categoria</label>
+                <select class="seleccion" name="Categoria" onchange="Producto()">
+                        <option value="0">Seleccione
+                        <option value="1">Confites
+                        <option value="2">Abarrotes
+                        <option value="3">Lacteos
+                        <option value="4">Bebidas
+                        </select><br />
 
-            <label>Fecha Elaboracion</label>
-            <input type="date" placeholder="ej:  21/12/2022" name="Fecha-Elaboracion">
+                <label>Fecha Elaboracion</label>
+                <input type="date" placeholder="ej:  21/12/2022" name="Fecha-Elaboracion"><br />
 
-            <label>Precio</label>
-            <input type="text" placeholder="ej:  21.000" name="Precio_txt" id="n3">
+                <label>Precio</label>
+                <input type="text" placeholder="ej:  21.000" name="Precio_txt" id="n3"><br /><br />
 
-            <input type="submit" name="enviar-FProducto" value="Enviar" onClick="CamposVaciosProducto()">
-        </form>
-    </div>
-    <div class="volver">
-        <form action="recibe.php">
-        <input type="submit" id="volver" value="Volver">
-        </form>
+                <input type="submit" name="enviar-FProducto" value="Enviar" onClick="CamposVaciosProducto()">
+            </form>
+        </div>
+        <div class="volver">
+            <form action="recibe.php">
+            <input type="submit" id="volver" value="Volver">
+            </form>
+        </div>
+        <div class="imagen">
+            <img src="img/Producto.png";>
+        </div>
     </div>
 
 </body>
@@ -78,4 +83,12 @@ else {
 document.product.opt.options[0].selected = true;
 }
 </script>
+<style>
+        img{
+            width: 450px;
+            border-radius: 50px;
+            border: 3px solid black;
+            margin: 50px 20px;
+        }
+    </style>
 </html>

@@ -35,6 +35,27 @@ if (isset($_POST['enviar-FVentas'])) {
       margin-top: 30px;
       cursor: pointer;
     }
+    h1{
+        text-align: center;
+        font-family:Sans-serif;
+    }
+
+    body{
+        background: url(../img/ventas.png);
+        font-size: 3.5em;
+        font-weight: bold;
+    }
+    input[type="submit"]{
+        font-size: 1em;
+        padding: 10px 60px;
+        border-radius: 50px;
+        color: white;
+        background: red;
+        align-content: left;
+        font-weight: bold;
+        margin-top: 30px;
+        cursor: pointer;
+    }
 </style>
 <form action="../recibe.php" class="Salir">
     <input type="submit" value="Salir">

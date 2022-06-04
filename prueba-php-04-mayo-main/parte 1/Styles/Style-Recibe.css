@@ -7,16 +7,17 @@
 }
 body{
     background: url(../img/photo.jpg);
+    width: 100%;
 }
 .principal{
     display: flex;
-    padding: 80px;
-    margin: 120px;
+    padding: 0px;
+    margin: 0px;
     
 }
 .contenedores{
-    padding: 40px ;
-    margin: 50px;
+    padding: 0px ;
+    margin: 0px;
 
 }
 img{width:250px;}
